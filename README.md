@@ -43,7 +43,7 @@ cat.py文件：</br>
 &#12288;&#12288;模型选择：</br>
 &#12288;&#12288;中和数据和需求，我排除了神经网络一类的模型，选择boost一类的模型，最终选择了xgboost模型</br></br>
 &#12288;&#12288;下图为最终训练后生成的模型：</br>
-![](https://github.com/slaxes/SeedCup_semifinal2017_final/blob/master/img/xgboost.jpg)</br></br>
+![](https://github.com/slaxes/SeedCup_semifinal2017_final/blob/master/img/xgboost.png)</br></br>
 ### 对于模型参数的选择以及优化思路</br>
 #### 参数选择：</br>
 <b><li>数据优化</b>：对数据进行预处理的时候，发现数据的正负样本非常不平衡，大概比例为1:1000。所以对数据进行了平滑处理，缩减负样本数据量，最终正负样本比例为：1:10</br>
