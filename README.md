@@ -1,6 +1,4 @@
 # 2017种子杯复赛</br>
-### CNN模型图</br>
-![](http://images2015.cnblogs.com/blog/1042406/201703/1042406-20170301104438813-230726230.png)</br></br>
 ### 使用语言及运行环境</br>
 Python 2.7.13 on Linux</br>
 需要模块：numpy,pandas,xgboost,sklearn</br></br>
@@ -36,7 +34,7 @@ cat.py文件：</br>
 2、商品特征：商品id，品牌id，类别id，店铺id，价格，这一个月里的浏览，收藏，加购，购买总次数</br>
 3、用户行为特征：距离预测日期的前一天，两天，三天，七天，十天，两周的浏览，收藏，加购，购买次数</br></br>
 &#12288;&#12288;下图为模型训练后特征打分
-![](https://github.com/slaxes/SeedCup_semifinal2017_final/img/point.png)</br></br>
+![]https://github.com/slaxes/SeedCup_semifinal2017_final/blob/master/img/point.jpg)</br></br>
 ### 预测模型的选取</br>
 &#12288;&#12288;需求分析：</br>
 &#12288;&#12288;本次预测为潜在顾客的预测，这是一个弱预测，我们很难做到很高的准确率，所以，我们对模型的偏差要求并不高，而需要尽量压缩方差，所以我们需要一个方差小，偏差大的模型，同时，我们很难判断某个特征对我们的最终结果会产生多大的影响，我们需要一个将权值至0的操作，潜在用户是一个很难判断的事，很容易产生过拟合</br>
@@ -45,7 +43,7 @@ cat.py文件：</br>
 &#12288;&#12288;模型选择：</br>
 &#12288;&#12288;中和数据和需求，我排除了神经网络一类的模型，选择boost一类的模型，最终选择了xgboost模型</br></br>
 &#12288;&#12288;下图为最终训练后生成的模型：</br>
-![](https://github.com/slaxes/SeedCup_semifinal2017_final/img/xgboost.png)</br></br>
+![](https://github.com/slaxes/SeedCup_semifinal2017_final/blob/master/img/xgboost.jpg)</br></br>
 ### 对于模型参数的选择以及优化思路</br>
 #### 参数选择：</br>
 <b><li>数据优化</b>：对数据进行预处理的时候，发现数据的正负样本非常不平衡，大概比例为1:1000。所以对数据进行了平滑处理，缩减负样本数据量，最终正负样本比例为：1:10</br>
