@@ -3,11 +3,11 @@
 ![](http://images2015.cnblogs.com/blog/1042406/201703/1042406-20170301104438813-230726230.png)</br></br>
 ### 使用语言及运行环境</br>
 Python 2.7.13 on Linux</br>
-需要模块：numpy,pandas,tensorflow</br></br>
+需要模块：numpy,pandas,xgboost,sklearn</br></br>
 ### 代码相应接口及变量含义</br>
-1、Data_get.py生成所需数据</br>
-2、CNN.py对数据进行训练</br>
-3、UseModel.py生成预测文件Data_get.py</br>
+代码使用方法：1、python2 运行xgbost.py文件</br>
+&#12288;&#12288;2、python2 运行get1.py文件</br>
+&#12288;&#12288;3、python2 运行cat.py文件</br>
 <b>文件作用</b>：整理相关数据，获取训练数据集文件以及测试数据集文件</br>
 <b>生成文件说明</b>：</br>
 &#12288;&#12288;'Team_elo.csv'队伍Elo天梯积分数据</br>
